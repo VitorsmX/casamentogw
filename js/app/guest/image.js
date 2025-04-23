@@ -40,7 +40,7 @@ export const image = (() => {
    * @returns {void}
    */
   const getByFetch = (el) => {
-    const src = el.getAttribute("data-src")
+    const src = el.getAttribute("data-src");
 
     urlCache.push({
       url: src,
