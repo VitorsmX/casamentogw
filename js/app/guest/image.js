@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import { progress } from "./progress.js";
-import { cache } from "../../common/cache.js";
-=======
-import { progress } from './progress.js';
-import { cache } from '../../connection/cache.js';
->>>>>>> 1193ec6bbb341a62eaa59d49371d87a5538256af
+import { cache } from "../../connection/cache.js";
 
 export const image = (() => {
   /**
@@ -109,25 +104,11 @@ export const image = (() => {
     await c.run(urlCache);
   };
 
-<<<<<<< HEAD
   /**
    * @returns {object}
    */
   const init = () => {
     images = document.querySelectorAll("img");
-=======
-        const c = cache('image');
-        const cancel = new Promise((res) => document.addEventListener('progress.invalid', res, { once: true }));
-
-        await c.open();
-        await Promise.allSettled(arrImages.filter((el) => el.getAttribute('data-fetch-img') === 'high').map((el) => {
-            return c.get(el.getAttribute('data-src'), cancel)
-                .then((i) => appendImage(el, i))
-                .then(() => el.classList.remove('opacity-0'));
-        }));
-        await c.run(urlCache, cancel);
-    };
->>>>>>> 1193ec6bbb341a62eaa59d49371d87a5538256af
 
     images.forEach(progress.add);
     hasSrc = Array.from(images).some((i) => i.hasAttribute("data-src"));
