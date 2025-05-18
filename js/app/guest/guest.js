@@ -175,14 +175,6 @@ export const guest = (() => {
         buildGoogleCalendar();
         document.getElementById('root').style.opacity = '1';
 
-        if (information.has('presence')) {
-            document.getElementById('form-presence').value = information.get('presence') ? '1' : '2';
-        }
-
-        if (information.get('info')) {
-            document.getElementById('information')?.remove();
-        }
-
         window.AOS.init();
         document.body.scrollIntoView({ behavior: 'instant' });
 
