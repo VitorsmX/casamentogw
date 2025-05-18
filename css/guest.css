@@ -102,3 +102,9 @@ html[data-bs-theme="dark"] .bg-white-black {
 .no-gap-bottom {
     margin-bottom: -0.75rem !important;
 }
+
+@media (min-width: 700px) {
+    .desktop-none {
+        display: none;
+    }
+}
