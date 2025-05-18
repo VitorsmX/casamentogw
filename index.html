@@ -84,7 +84,7 @@
 <!-- data-bs-theme ['auto', 'dark', 'light'] -->
 <!-- Recommend use 'data-src' in img tag -->
 
-<body data-key="bfb9cfea33ab7ae21a315fbd6f065a815d3e20ff2f007aa2ca" data-url="https://api.ulems.my.id/">
+<body>
 
     <!-- Root Invitation -->
     <div class="row m-0 p-0" style="opacity: 0;" id="root">
@@ -369,56 +369,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- Comment -->
-                <section class="bg-light-dark my-0 pb-0 pt-3" id="comment">
-                    <div class="container">
-                        <div class="border rounded-4 shadow p-3 mb-2">
-                            <h2 class="font-esthetic text-center mt-2 mb-4" style="font-size: 2.25rem;">Comentários</h2>
-
-                            <div class="mb-3">
-                                <label for="form-name" class="form-label my-1"><i class="fa-solid fa-person me-2"></i>Nome Completo</label>
-                                <input type="text" class="form-control shadow-sm rounded-4" id="form-name" minlength="2" maxlength="50" placeholder="Insira seu nome completo" autocomplete="name" data-offline-disabled="false">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="form-presence" class="form-label my-1"><i class="fa-solid fa-person-circle-question me-2"></i>Selecionar Participação</label>
-                                <select class="form-select shadow-sm rounded-4" id="form-presence" autocomplete="off" data-offline-disabled="false">
-                                    <option value="0" selected>Confirmar Presença</option>
-                                    <option value="1">&#9989; Vou Participar</option>
-                                    <option value="2">&#10060; Não Vou Poder Ir</option>
-                                </select>
-                            </div>
-
-                            <div class="d-block mb-3" id="comment-form-default">
-                                <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
-                                    <button type="button" class="btn-close rounded-4 p-3" data-bs-dismiss="alert" aria-label="Close" onclick="undangan.guest.closeInformation()"></button>
-
-                                    <p style="font-size: 1.5rem;">Bem vindos a seção de comentários</p>
-                                    <p class="m-0">Deixe seu comentário abaixo</p>
-                                    <hr class="my-2">
-                                    <p class="m-0">Deixe sua homenagem e felicitações aos noivos!</p>
-                                </div>
-
-                                <label for="form-comment" class="form-label my-1"><i class="fa-solid fa-comment me-2"></i>Comentário</label>
-                                <div class="position-relative">
-                                    <button class="btn btn-secondary btn-sm rounded-4 shadow-sm me-1 my-1 position-absolute bottom-0 end-0" onclick="undangan.comment.gif.open(undangan.comment.gif.default)" aria-label="button gif" data-offline-disabled="false"><i class="fa-solid fa-photo-film"></i></button>
-                                    <textarea class="form-control shadow-sm rounded-4" id="form-comment" rows="4" minlength="1" maxlength="1000" placeholder="Deixe aqui sua mensagem de amor" autocomplete="off" data-offline-disabled="false"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="d-none mb-3" id="gif-form-default"></div>
-
-                            <div class="d-grid">
-                                <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="undangan.comment.send(this)" data-offline-disabled="false">
-                                    <i class="fa-solid fa-paper-plane me-2"></i>Enviar
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Comments -->
-                        <div class="py-3" id="comments" data-loading="false"></div>
-
                         <!-- Pagination -->
                         <nav class="d-flex d-none justify-content-center mt-1 mb-0" id="pagination"></nav>
                     </div>
